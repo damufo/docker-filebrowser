@@ -8,6 +8,6 @@ services:
     restart: unless-stopped
     user: ${UID}:${GID}
     volumes:
-      - ${FILE_BROWSER_DATA_FOLDER}:/srv
+      - ${FILEBROWSER_DATA_FOLDER}:/srv
       - ./filebrowser.db:/database.db
       - ./filebrowser.json:/.filebrowser.json
